@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
+import { ROOT_REDUCERS } from './state/app.state';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools'
 
 
 
@@ -15,7 +17,10 @@ import { StoreModule } from '@ngrx/store';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot(ROOT_REDUCERS),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
