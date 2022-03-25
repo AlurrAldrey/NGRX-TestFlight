@@ -1,0 +1,28 @@
+<mat-card>
+
+    <h2>Crear Usuario</h2>
+
+    <div [formGroup]="createUserForm">
+
+        
+        <div>
+            <label for="nombre">Nombre</label>
+            <input class="campo" name="nombre" type="text" formControlName="nombre">
+        </div>
+        
+        <div>
+            <label for="apellido">Apellido</label>
+            <input class="campo" name="correo" type="text">
+        </div>
+        
+        <div>
+            <label for="correo">Mail</label>
+            <input class="campo" name="correo" type="text">
+        </div>
+        
+        <div>
+            <button class="button" (click)="onSubmit()">Guardar</button>
+        </div>
+        
+    </div>
+</mat-card>

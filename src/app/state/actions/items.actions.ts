@@ -10,3 +10,4 @@ export const retrievedItemList = createAction(
     '[Item List/API] Retrieve Item Success',
     props<{ items: ReadonlyArray<ItemModel>}>()
 )
+

@@ -40,3 +40,5 @@ app-ui-filter,
 app-ui-block-item {
     /* border: solid 2px red; */
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
